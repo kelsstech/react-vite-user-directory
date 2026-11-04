@@ -1,15 +1,21 @@
 {
   "name": "user-directory",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server.cjs"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.0.0",
+    "dotenv": "^16.0.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
