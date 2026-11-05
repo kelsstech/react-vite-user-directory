@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auth-card {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.auth-card h2 {
+    margin-bottom: 10px;
+}
+
+.auth-card p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-card label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.auth-card input {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.auth-card input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+.auth-card button {
+    padding: 13px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-card button:hover {
+    background: #1d4ed8;
+}
+
+.auth-card button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    background: #dcfce7;
+    color: #166534;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Students Page */
+
+.students-container {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.students-header {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.students-header h1 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.students-header p {
+    color: #64748b;
+}
+
+.students-header button {
+    background: #dc2626;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.students-content {
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+.students-content h2 {
+    margin-bottom: 20px;
+}
+
+.students-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.student-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.student-card h3 {
+    margin-bottom: 12px;
+    color: #2563eb;
+}
+
+.student-card p {
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    .students-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
